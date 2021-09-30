@@ -17,5 +17,7 @@ func main() {
 	var prince float64
 	var name string
 	var done bool
+	// by default, an instantiated and typed var will get a 0 value for nums
+	// "" for strings and 'false' for bools
 	fmt.Println(value, prince, name, done)
 }
