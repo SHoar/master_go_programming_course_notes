@@ -11,9 +11,11 @@ func main() {
 	)
 	fmt.Println(c1, c2, c3)
 
-	var array
-	for var i int; i < 5; i++ {
-		i = iota
-	}
+	const (
+		s3 = iota+5
+		s4
+		s5
+	)
+	fmt.Println(s3, s4, s5)
 
 }
