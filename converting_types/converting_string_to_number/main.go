@@ -33,7 +33,7 @@ func main() {
 
 	i, err := strconv.Atoi("-50") // Ascii to int
 	_ = err
-	s2 := strconv.Itoa(20)        // Int to Ascii
+	s2 := strconv.Itoa(20) // Int to Ascii
 
 	fmt.Printf("i type is %T, value is %v\n", i, i)
 	fmt.Printf("s2 type is %T, value is %q", s2, s2)
