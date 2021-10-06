@@ -23,7 +23,7 @@ func main() {
 	}
 
 	// 5
-	for i, _ := range grades {
+	for i := range grades {
 		f.Printf("index: %v, grade: %v\n", i, grades[i])
 	}
 }
