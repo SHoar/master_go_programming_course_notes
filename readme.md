@@ -3,3 +3,6 @@
 https://udemy.com/course/master-go-programming-complete-golang-bootcamp/
 
 Course Instructor: Andrei Dumitrescu
+
+### Next Lecture:
+78. Slices in Go
