@@ -22,7 +22,7 @@ func main() {
 	}
 
 	if args := os.Args; len(args) != 2 {
-		fmt.Println("One argument is required")
+		fmt.Println("Only one argument is required")
 	} else if km, err := strconv.Atoi(args[1]); err != nil {
 		fmt.Println("The argument must be an integer, Error:", err)
 	} else {
