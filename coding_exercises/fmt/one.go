@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	x, y, z := 10, 15.5, "Gophers"
@@ -9,12 +12,12 @@ func main() {
 
 	fmt.Printf("x: %d, y: %f, z: %s \n", x, y, z) // 1
 	fmt.Printf("score vals are: %#v\n", score)
-
-	for i := 0; i < len([4]{x,y,z,score}); i++ {
-		fmt.Printf(i + " is %v \n", i)
+	intZ, _ := strconv.Atoi(z)
+	for i := 0; i < len([]int{x, int(y), intZ}); i++ { // does not work because slice must have all of same type
+		fmt.Printf("i is %v \n", i)
 	}
 
-	fmt.Printf("All ints: %d, scores: %d\n", x, score) // 3
+	fmt.Printf("All ints: %d, scores: %v\n", x, score) // 3
 	fmt.Printf("Type of y: %T, score: %T\n", y, score)
 
 }

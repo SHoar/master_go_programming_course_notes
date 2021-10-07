@@ -3,12 +3,12 @@ package main
 import f "fmt"
 
 func main() {
-	
+
 	birthYear := 1981
 	currentYear := 2021
 
 	age := 0
-	
+
 life: //label for loop
 	for year := birthYear; year <= currentYear; year++ {
 		age++
@@ -17,7 +17,6 @@ life: //label for loop
 			break life
 		}
 	}
-
 
 	f.Println("Outside of life label loop")
 }
