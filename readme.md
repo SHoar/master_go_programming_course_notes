@@ -5,4 +5,4 @@ https://udemy.com/course/master-go-programming-complete-golang-bootcamp/
 Course Instructor: Andrei Dumitrescu
 
 ### Next Lecture:
-78. Slices in Go
+88. Append, Length, & Capacity in depth
