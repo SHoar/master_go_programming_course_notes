@@ -17,4 +17,12 @@ func main() {
 
 	f.Println(s1[:3]) // same as s1[0:3]
 	f.Println(s1[:])  // same as s1[0:len(s1)]
+	// f.Println(s1[:100]) //s1 does not have up to index 100, error
+
+	s1 = append(s1[:4], 100)
+	f.Println(s1)
+
+	s1 = append(s1[:4], 200) // able to overwrite existing values
+	f.Println(s1)
+	// a = append(s1, s2...) // cannot append to arrays
 }
