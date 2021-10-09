@@ -8,7 +8,10 @@ func main() {
 	myFriendCount := copy(myFriends, friends)
 	_ = myFriendCount // cuz who counts their friends?
 
+	f.Printf("%g\n", friends)
+	f.Printf("%g\n", myFriends)
 	myFriends = myFriends[0:3] // Diana is no longer a friend
+	friends[0] = "Margaret"
 
 	f.Println(friends)
 	f.Println(myFriends)
