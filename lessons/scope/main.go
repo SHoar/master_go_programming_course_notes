@@ -17,7 +17,6 @@ func main() {
 	f.Println("Bye bye")
 }
 
-
 func f1() {
 	f.Printf("done in f1(): %v\n", done) // package scope
 	f.Println("b in package", b)
