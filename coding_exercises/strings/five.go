@@ -6,6 +6,8 @@ import (
 
 func main() {
 	s := "你好 Go!"
+
+	// convert the string
 	s2 := []byte(s)
 	// 1. convert the string to a byte slice
 	var byteSlice []byte
