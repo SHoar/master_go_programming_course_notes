@@ -1,6 +1,1 @@
-I must not fear.
-Fear is the mindkiller.
-I will face my fear.
-I will permit it to go over me and through me, and
-Where I have gone, there will be nothing left.
-Only I will remain.
+The Go gopher is an iconic mascot!
