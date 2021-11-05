@@ -1,6 +1,9 @@
 package main
 
-import f "fmt"
+import (
+	"fmt"
+	f "fmt"
+)
 
 func main() {
 
@@ -26,4 +29,12 @@ func main() {
 	*p = 90 // assign x = 90
 	f.Println(x, *p)
 	f.Println("*p==x", *p == x)
+
+	*p = 10 // x = 10
+	*p = *p / 2 // x/2
+	fmt.Println(x)
+
+	// &value => pointer
+	// *pointer => value
+	// *type => pointer to type description
 }
