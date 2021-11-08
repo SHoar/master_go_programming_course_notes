@@ -5,5 +5,5 @@ https://udemy.com/course/master-go-programming-complete-golang-bootcamp/
 Course Instructor: Andrei Dumitrescu
 
 #### Next Lecture:
-Section 22: Pointers in Go
-141. Computer Memory and Pointers
+Section 24: Methods and Interfaces in Go (OOP)
+149. Receiver Functions (Methods)
