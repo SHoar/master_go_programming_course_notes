@@ -6,4 +6,4 @@ Course Instructor: Andrei Dumitrescu
 
 #### Next Lecture:
 Section 24: Methods and Interfaces in Go (OOP)
-149. Receiver Functions (Methods)
+159. Embedded Interfaces
