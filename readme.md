@@ -5,5 +5,5 @@ https://udemy.com/course/master-go-programming-complete-golang-bootcamp/
 Course Instructor: Andrei Dumitrescu
 
 #### Next Lecture:
-Section 24: Methods and Interfaces in Go (OOP)
-159. Embedded Interfaces
+Section 26: Concurrency in Go
+165. Intro to Goroutines
