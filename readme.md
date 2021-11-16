@@ -6,4 +6,4 @@ Course Instructor: Andrei Dumitrescu
 
 #### Next Lecture:
 Section 26: Concurrency in Go
-165. Intro to Goroutines
+175. Mutexes
