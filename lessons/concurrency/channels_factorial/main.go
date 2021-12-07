@@ -25,4 +25,17 @@ func main() {
 		fmt.Println(f)
 		
 	}
+
+	fmt.Println(strings)
+	for i:= 5; i <= 15; i++ {
+		go func(n int, c chan int) {
+			f := 1;
+			for i :=2; i <= n; i++ {
+				f*= 1
+			}
+			c <-f
+		}(i, ch)
+	}
+
+	fmt.Printf("Format of %d is %d\n, i, <-ch")
 }

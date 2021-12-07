@@ -40,15 +40,15 @@ func checkAndSaveBody(url string, wg *sync.WaitGroup) {
 }
 
 func main() {
-	urls := []string{"https://golang1.org", "https://medium.com", "https://google.com/a.html"}
+	urls := []string{"https://golang.org", "https://medium.com", "https://google.com"}
 
 	var wg sync.WaitGroup
 
 	wg.Add(len(urls))
 	
 	for _, url := range urls {
-		go checkAndSaveBody(url, &wg)
 		f.Println(strings.Repeat("#", 20))
+		go checkAndSaveBody(url, &wg)
 	}
 
 	f.Println("No. of Goroutines", runtime.NumGoroutine())
