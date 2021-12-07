@@ -28,9 +28,9 @@ func main() {
 
 	c := make(chan string)
 
-	for _, url := range urls {
-		go checkUrl(url, c)
-	}
+	// for _, url := range urls {
+	// 	go checkUrl(url, c)
+	// }
 
 	f.Println("No. of Goroutines", runtime.NumGoroutine())
 
@@ -38,17 +38,21 @@ func main() {
 	// 	f.Println(strings.Repeat("#", 20))
 	// 	f.Println(<-c)
 	// }
+
+	// 1. via infinite loop - continue to check url from channel every 2 secs
 	// for {
 	// 	go checkUrl(<- c, c)
 	// 	f.Println(strings.Repeat("#", 30))
 	// 	time.Sleep(time.Second * 2)
 	// }
 
+	// 2. via controlled for loop
 	// for url := range c {
 	// 	time.Sleep(time.Second * 2)
 	// 	go checkUrl(url, c)
 	// }
 
+	// 3. via anonymous func
 	for url:= range c {
 		go func(u string){
 			time.Sleep(time.Second * 2)
